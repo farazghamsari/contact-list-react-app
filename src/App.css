@@ -1,0 +1,194 @@
+body {
+    background-color: #6366f1;
+}
+
+.App {
+    max-width: 500px;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* ///////////////////////////////// */
+.add-form h2 {
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formControl {
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+}
+
+.formControl input {
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    text-indent: 5px; 
+}
+
+.formControl input:focus {
+    outline: 3px solid #4348ca;
+}
+
+.formControl label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+form button {
+    width: 120px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+    background-color: #4338ca;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* //////////////////////////////////// */
+.search-box input {
+    margin-bottom: 5px;
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    text-indent: 5px;
+}
+
+.search-box input:focus {
+    outline: 3px solid #4348ca;
+}
+
+.add-btn {
+    width: 180px;
+    height: 30px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #4338ca;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.concat-list h2 {
+    color: white;
+}
+
+/* ////////////////////////////////////// */
+.concat {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #4338ca;
+    color: white;
+}
+
+.concat a {
+    width: 65%;
+    text-decoration: none;
+    color: white;
+}
+
+.concat-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.concat-info>* {
+    margin-right: 10px;
+}
+
+.concat-info div {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.contact-btns {
+    width: 20%;
+}
+
+.contact-btns button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.delete-btn {
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    margin-left: 8px;
+    background-color: rgb(255, 65, 65);
+    cursor: pointer;
+}
+
+/* ////////////////////////////////// */
+.edit-form h2 {
+    color: white;
+}
+
+.edit-btn {
+    width: 50px;
+    height: 25px;
+    background-color: #6366f1;
+    cursor: pointer;
+
+}
+/* media queries */
+@media screen and (max-width:480px){
+    .App{
+        max-width: 300px;
+    }
+    .search-box input{
+        width: 100%;
+
+    }
+    .concat,
+    .concat-info{
+        flex-direction: column;
+    }
+    .concat{
+        width: 80%;
+        margin: 10px auto;
+    }
+    .concat-info{
+        justify-content: center;
+    }
+    .concat-info div{
+        margin-top: 15px;
+    }
+    .concat-info p{
+        margin: 5px;
+    }
+    .concat-info>*{
+        margin-right: 0;
+    }
+    .contact-btns{
+        width: 50%;
+        margin: 15px auto;
+    }
+/* ///////////// */
+    .add-form{
+        width: 100%;
+    }
+    .formControl{
+        width: 100%;
+    }
+}
